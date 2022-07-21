@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=League+Gothic&family=Poppins:wght@100;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/login_registration.css" />
+  </head>
+  <body id="register">
+    <div class="first">
+      <h1>Registration Page</h1>
+      <form onsubmit="register(this)" action="">
+        <div class="second">
+          <div class="input_box">
+            <div class="child_input_box">
+              <span>Your First Name*</span>
+              <input class="input" type="text" name="fname" id="fname" />
+            </div>
+            <div class="child_input_box">
+              <span>Your Last Name*</span>
+              <input class="input" type="text" name="lname" id="lname" />
+            </div>
+          </div>
+          <div class="input_box">
+            <div class="child_input_box">
+              <span>Your Email ID*</span>
+              <input class="input" type="email" name="email" id="email" />
+            </div>
+            <div class="child_input_box">
+              <span>Your Mobile No.*</span>
+              <input class="input" type="tel" name="mobile" id="mobile" />
+            </div>
+          </div>
+          <div class="input_box">
+            <div class="child_input_box">
+              <span>password*</span>
+              <input class="input" type="password" name="password" id="password" />
+            </div>
+            <div class="child_input_box">
+              <span>Confirm Password*</span>
+              <input class="input" type="password" name="cnf_password" id="cnf_password" />
+            </div>
+          </div>
+          <div class="btn_group">
+            <div class="radio_group">
+              <input type="radio" name="gender" id="male" checked value="male"/><span>Male</span>
+              <input type="radio" name="gender" id="female" value="female"/><span>Female</span>
+            </div>
+
+              <button id="register_submit" type="button" value="submit" onclick="register()" >Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
